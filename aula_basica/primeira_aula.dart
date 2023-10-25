@@ -6,4 +6,11 @@ void main() {
   print(nome);
   print(idade);
   print(peso);
+
+  var numero = 0;
+
+  while (numero <= 5) {
+    print("Executando $numero");
+    numero++;
+  }
 }
