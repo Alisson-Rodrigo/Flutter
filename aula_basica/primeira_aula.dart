@@ -1,16 +1,22 @@
-void main() {
-  var nome = 'João';
-  const idade = 10;
-  int peso = 74;
+class Animal {
+  int idade;
+  String nome;
 
-  print(nome);
-  print(idade);
-  print(peso);
-
-  var numero = 0;
-
-  while (numero <= 5) {
-    print("Executando $numero");
-    numero++;
+  Animal(int idade, String nome) {
+    this.nome = nome;
+    this.idade = idade;
+    print("Animal criado com nome $nome e idade $idade");
   }
+
+  String dormir() {
+    return "Dormir";
+  }
+}
+
+void main() {
+  Animal animal = Animal(10, "Cachorro");
+  print(animal.nome);
+  print(animal.idade);
+
+  animal.dormir();
 }
